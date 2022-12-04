@@ -18,8 +18,6 @@
       <ion-icon name="refresh-outline" size="large"></ion-icon>
     </button>
   </header>
-
-
   <section class="about">
     <div id="abt">
       <h2>
@@ -35,7 +33,7 @@
     <div class="input-box">
       <h2>ENTER YOUR INSTRUCTION</h2>
       <form>
-          <input type ="text" name="" required>
+          <input id="" type ="text" name="" required>
       </form>
       <button type="submit">SHOW RESULT</button>
     </div>
@@ -52,17 +50,23 @@
         <thead>
           <tr>
               <th>OPCODE</th>
-              <th>DIRECTION</th>
+              <th>DIR</th>
+              <th>WORD</th>
               <th>MODE</th>
-              <th>OPERAND</th>
+              <th>REG</th>
+              <th>R/M</th>
+              <th>IMM/ADD</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-              <td>101</td>
+              <td>101101</td>
               <td>1</td>
               <td>0</td>
-              <td>1</td>
+              <td>11</td>
+              <td>110</td>
+              <td>110</td>
+              <td>xxxxxxxx</td>
           </tr>
         </tbody>
       </table>
@@ -84,36 +88,36 @@
         </thead>
         <tbody>
             <tr>
-                <td id="ah">AH</td>
-                <td>1000</td>
+                <td>AH</td>
+                <td id="ah">00000000</td>
             </tr>
             <tr>
-                <td id="bx">AL</td>
-                <td>1010</td>
+                <td>AL</td>
+                <td id="bx">00000000</td>
             </tr>
             <tr>
-              <td id="bh">BH</td>
-              <td>1010</td>
+              <td>BH</td>
+              <td id="bh">00000000</td>
             </tr>
             <tr>
-              <td id="bl">BL</td>
-              <td>1010</td>
+              <td>BL</td>
+              <td id="bl">00000000</td>
             </tr>
             <tr>
-              <td id="ch">CH</td>
-              <td>1010</td>
+              <td>CH</td>
+              <td id="ch">00000000</td>
             </tr>
             <tr>
-              <td id="cl">CL</td>
-              <td>1010</td>
+              <td>CL</td>
+              <td id="cl">00000000</td>
             </tr>
             <tr>
-              <td id="dh">DH</td>
-              <td>1010</td>
+              <td>DH</td>
+              <td id="dh">00000000</td>
             </tr>
             <tr>
-              <td id="dl">DL</td>
-              <td>1010</td>
+              <td>DL</td>
+              <td id="dl">00000000</td>
             </tr>
         </tbody>
     </table>
@@ -130,52 +134,52 @@
         </thead>
         <tbody>
             <tr>
+                <td>0000</td>
+                <td id="1">00000000</td>
                 <td>1000</td>
-                <td>1000</td>
-                <td>1000</td>
-                <td>1000</td>
+                <td id="9">00000000</td>
             </tr>
             <tr>
-                <td>1010</td>
-                <td>1000</td>
-                <td>1000</td>
-                <td>1000</td>
+                <td>0001</td>
+                <td id="2">00000000</td>
+                <td>1001</td>
+                <td id="10">00000000</td>
             </tr>
             <tr>
+              <td>0010</td>
+              <td id="3">00000000</td>
               <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td id="11">00000000</td>
             </tr>
             <tr>
-              <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td>0011</td>
+              <td id="4">00000000</td>
+              <td>1011</td>
+              <td id="12">00000000</td>
             </tr>
             <tr>
-              <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td>0100</td>
+              <td id="5">00000000</td>
+              <td>1100</td>
+              <td id="13">00000000</td>
             </tr>
             <tr>
-              <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td>0101</td>
+              <td id="6">00000000</td>
+              <td>1101</td>
+              <td id="14">00000000</td>
             </tr>
             <tr>
-              <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td>0110</td>
+              <td id="7">00000000</td>
+              <td>1110</td>
+              <td id="15">00000000</td>
             </tr>
             <tr>
-              <td>1010</td>
-              <td>1000</td>
-              <td>1000</td>
-              <td>1000</td>
+              <td>0111</td>
+              <td id="8">00000000</td>
+              <td>1111</td>
+              <td id="16">00000000</td>
             </tr>
         </tbody>
     </table>
@@ -183,28 +187,30 @@
   </section>
 
   <h2 id="cycle-heading">
-    CLOCK CYCLES USED IN THIS INSTRCUTION
+    CLOCK CYCLES USED IN THIS INSTRUCTION
   </h2>
 
   <section class="clk-cycle">
-    <div id="image1">
-      <img src="bg.jpg" alt="FETCH">
+    <div id="fetch">
+      <p>FETCH</p>
     </div>
-    <div id="image2">
-      <img src="bg.jpg" alt="DECODE">
+    <div id="decode">
+      <p>DECODE</p>
     </div>
-    <div id="image2">
-      <img src="bg.jpg" alt="EXECUTE">
+    <div id="execute">
+      <p>EXECUTE</p>
     </div>
-    <div id="image4">
-      <img src="bg.jpg" alt="LOAD">
+    <div id="load">
+      <p>LOAD</p>
     </div>
-    <div id="image5">
-      <img src="bg.jpg" alt="STORE">
+    <div id="store">
+      <p>STORE</p>
     </div>
   </section>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="test.js"></script>
 </body>
 </html>
