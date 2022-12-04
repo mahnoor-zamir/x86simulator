@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Lucida Console";
+    font-family: "Verdana";
     align-items: centre;
     justify-content: centre;
 }
@@ -14,7 +14,7 @@
 
 body{
     width:100%;
-    height:2500px;
+    height:2000px;
     color:#fff;
     background: linear-gradient(135deg, rgb(66, 74, 149), rgb(130, 175, 238), rgb(151, 77, 183),rgb(54, 54, 164),rgb(53, 105, 138),rgb(110, 74, 152));
     background-size: 400% 400%;
@@ -100,7 +100,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 250px;
     text-align: center;
 }
 
@@ -128,11 +128,13 @@ body{
     color: rgb(255, 255, 255);
     padding-top: 20px;
     padding-bottom: 10px;
+    font-size: 120%;
 }
 
 
 .input-sec input[type="text"]{
     border-color: #ffffff;
+    font-family: 'Looper';
     background-color: transparent;
     padding: 5px 5px;
     text-align: center;
@@ -140,23 +142,24 @@ body{
     font-size: 20px;
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
 }
 
-.result-btn{
-    border-radius: 10px;
+.input-box button{
+    border-radius: 20px;
     border: none;
     box-shadow: none;
     padding: 10px 25px;
-    background: #333;
+    background: transparent;
     color:  #fff;
     font-size: 16px;
     cursor: pointer;
 }
 
-.result-btn:hover{
-    background: #37128f;
+.input-box button:hover{
+    background: #8f1289;
 }
 
 .code-sec{
