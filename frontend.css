@@ -172,15 +172,24 @@ body{
 }
 
 .machine-code{
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    width: 30%;
+    width: 26%;
     height: 80%;
+    border-color: #ffffff;
+    border-radius: 20px;
+    border-width:2px;
+    border-style:solid;
+}
 
+#mcode{
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 
 #code-heading{
@@ -190,9 +199,6 @@ body{
     font-size: 25px;
 }
 
- .machine-code th{
-    padding: 0 10px;
- }
 
 
  #mcode{
