@@ -82,8 +82,8 @@ body{
     margin-right: 70px;
     height: 60px;
     width: 60px;
-    background-color: #ffffff;
-    color: #4ec2f0;
+    background-color: transparent;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -92,8 +92,9 @@ body{
 }
 
 .round-button:hover{
-    background-color: #d82bc1;
+    background-color: #8f1289;
 }
+
 
 
 .input-sec{
@@ -193,6 +194,7 @@ body{
     padding: 0 10px;
  }
 
+
  #mcode{
     height: 55px;
     color: white;
@@ -222,6 +224,7 @@ body{
 
 #registers th, td {
     border: 1px solid white;
+    text-align: center;
 }
 
 #registers{
@@ -230,7 +233,8 @@ body{
 }
 
 .reg-table th{
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .reg-table thead tr {
@@ -239,13 +243,15 @@ body{
 }
 
 .mem-table th{
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
    
 }
 
 #memory th, td {
     border: 1px solid white;
     color:white;
+    text-align: center;
 }
 
 #memory{
@@ -292,25 +298,24 @@ body{
 
 .clk-cycle{
     display: flex;
-    padding: 0 30px;
+    padding: 0 90px;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
+    height: 250px;
 }
 
-#image1 img{
-    height: 100px;
+.clk-cycle div{
+    text-align: center;
+    border-radius: 20px;
+    border-width:2px;
+    border-style:solid;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
 }
-#image2 img{
-    height: 100px;
-}
-#image3 img{
-    height: 100px;
-}
-#image4 img{
-    height: 100px;
-}
-#image5 img{
-    height: 100px;
-}
+
 
