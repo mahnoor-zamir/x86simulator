@@ -1,0 +1,306 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Console";
+    align-items: centre;
+    justify-content: centre;
+}
+
+/*varibales*/
+:root{
+    --head-height: 10px;
+}
+
+body{
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 2500px;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.about p{
+    font-size: medium;
+    color: #ffffff;
+}
+
+.about h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+/*header*/
+#head{
+    /*background-color: #0979c4;*/
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Header: Logo and Image */
+#logo{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+#logo img{
+    height: 150px;
+}
+
+
+.round-button{
+    margin-top: 60px;
+    margin-right: 70px;
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    color: #4ec2f0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+
+.round-button:hover{
+    background-color: #d82bc1;
+}
+
+
+.input-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+}
+
+
+.input-box{
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    border-color: #000000;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    border-collapse: collapse;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.input-box h2{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.input-field{
+    border-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+.input-field input[type="text"]{
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    font-size: 20px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.result-btn{
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    padding: 10px 25px;
+    background: #333;
+    color:  #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result-btn:hover{
+    background: #37128f;
+}
+
+.code-sec{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.machine-code{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 30%;
+    height: 80%;
+
+}
+
+#code-heading{
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+ .machine-code th{
+    padding: 0 10px;
+ }
+
+ #mcode{
+    height: 55px;
+    color: white;
+ }
+
+ #memreg-heading{
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.tables{
+    display: flex;
+    height: 400px;
+}
+
+.reg-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 50%;
+
+}
+
+#registers th, td {
+    border: 1px solid white;
+}
+
+#registers{
+    height: 300px;
+    color: white;
+}
+
+.reg-table th{
+    padding-right: 30px;
+}
+
+.reg-table thead tr {
+    color: #fff;
+    text-align: left;
+}
+
+.mem-table th{
+    padding-right: 30px;
+   
+}
+
+#memory th, td {
+    border: 1px solid white;
+    color:white;
+}
+
+#memory{
+    height: 300px;
+}
+
+.mem-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.mem-table thead tr {
+    color: #fff;
+    text-align: left;
+}
+
+#cycle-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+#memreg-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#code-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.clk-cycle{
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+#image1 img{
+    height: 100px;
+}
+#image2 img{
+    height: 100px;
+}
+#image3 img{
+    height: 100px;
+}
+#image4 img{
+    height: 100px;
+}
+#image5 img{
+    height: 100px;
+}
+

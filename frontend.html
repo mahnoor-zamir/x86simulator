@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x86 simulator</title>
+  <link rel="stylesheet" href="frontend.css">
+  
+</head>
+
+<body>
+
+  <header id="head">
+    <div id="logo">
+      <img src="white.png" alt="logo image">
+    </div>
+    <button class="round-button" type="button" onClick="window.location.reload();">
+      <ion-icon name="refresh-outline" size="large"></ion-icon>
+    </button>
+  </header>
+
+  <section class="input-sec">
+    <div class="input-box">
+      <h2>ENTER YOUR INSTRUCTION</h2>
+      <form>
+          <input type ="text" name="" required>
+      </form>
+      <button type="submit">Show Result</button>
+    </div>
+  </section>
+
+  <h2 id="code-heading">
+    MACHINE CODE FOR THIS INSTRUCTION
+  </h2>
+
+<section class="about">
+  <div id="abt">
+    <h2>
+      ABOUT
+    </h2>
+    <p>
+      alahablahblashajksdhsjd
+    </p>
+  </div>
+</section>
+
+  <section class="code-sec">
+    <div class="machine-code">
+      <table id="mcode">
+        <thead>
+          <tr>
+              <th>OPCODE</th>
+              <th>DIRECTION</th>
+              <th>MODE</th>
+              <th>OPERAND</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>101</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <h2 id="memreg-heading">
+    REGISTERS AND MEMORY
+  </h2>
+
+  <section class="tables">
+    <div class="reg-table">
+      <table id="registers">
+        <thead>
+            <tr>
+                <th>REGISTER</th>
+                <th>DATA STORED</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="ah">AH</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td id="bx">AL</td>
+                <td>1010</td>
+            </tr>
+            <tr>
+              <td id="bh">BH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="bl">BL</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="ch">CH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="cl">CL</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="dh">DH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="dl">DL</td>
+              <td>1010</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="mem-table">
+      <table id="memory">
+        <thead>
+            <tr>
+                <th>ADDRESS</th>
+                <th>MEMORY</th>
+                <th>ADDRESS</th>
+                <th>MEMORY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>1010</td>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </section>
+
+  <h2 id="cycle-heading">
+    CLOCK CYCLES USED IN THIS INSTRCUTION
+  </h2>
+
+  <section class="clk-cycle">
+    <div id="image1">
+      <img src="bg.jpg" alt="FETCH">
+    </div>
+    <div id="image2">
+      <img src="bg.jpg" alt="DECODE">
+    </div>
+    <div id="image2">
+      <img src="bg.jpg" alt="EXECUTE">
+    </div>
+    <div id="image4">
+      <img src="bg.jpg" alt="LOAD">
+    </div>
+    <div id="image5">
+      <img src="bg.jpg" alt="STORE">
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
