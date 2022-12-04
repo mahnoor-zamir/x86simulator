@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 300px;
+    height: 200px;
 }
 
 .about p{
@@ -46,12 +46,20 @@ body{
     color: #ffffff;
 }
 
+#abt{
+    width: 50%;
+    height: 90%;
+}
+
+#abt p{
+    padding-top: 30px;
+}
 /*header*/
 #head{
     /*background-color: #0979c4;*/
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -122,25 +130,18 @@ body{
     padding-bottom: 10px;
 }
 
-.input-field{
+
+.input-sec input[type="text"]{
     border-color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 20px;
-}
-
-
-.input-field input[type="text"]{
     background-color: transparent;
+    padding: 5px 5px;
     text-align: center;
     box-shadow: none;
     font-size: 20px;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
     margin-bottom: 15px;
-    margin-top: 5px;
-    cursor: pointer;
+    margin-top: 25px;
 }
 
 .result-btn{
